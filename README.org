@@ -19,7 +19,7 @@ import hashlib
 
 ** Algorithms Available
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 '\n'.join(sorted(hashlib.algorithms_available))
 #+END_SRC
 
@@ -63,7 +63,7 @@ whirlpool
 
 ** Algorithms Guaranteed
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 '\n'.join(sorted(hashlib.algorithms_guaranteed))
 #+END_SRC
 
@@ -87,7 +87,7 @@ shake_256
 
 ** New
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 m = hashlib.new("sha512", b"Message")  # possible parameters passing as kwargs
 type(m)
 #+END_SRC
@@ -105,7 +105,7 @@ m.update("Append message")
 
 ** Name
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 m.name
 #+END_SRC
 
@@ -116,7 +116,7 @@ sha512
 
 ** Digest
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 m.digest()
 #+END_SRC
 
@@ -127,7 +127,7 @@ b'O\xb4r\xdf\xc4=\xefzF\xadD,X\xacS/\x89\xe0\xc8\xa9o#\xb6r\xf5\xfdcvR\xea\xb1X\
 
 ** Hexdigest
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 m.hexdigest()
 #+END_SRC
 
@@ -138,7 +138,7 @@ m.hexdigest()
 
 ** Digest size
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 m.digest_size
 #+END_SRC
 
@@ -149,7 +149,7 @@ m.digest_size
 
 ** Block size
 
-#+BEGIN_SRC python :results replace code
+#+BEGIN_SRC python :results replace code :exports both
 m.block_size
 #+END_SRC
 
